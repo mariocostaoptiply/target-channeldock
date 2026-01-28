@@ -51,7 +51,7 @@ class ChannelDockBaseSink(HotglueSink):
         
         # Log request payload for debugging
         try:
-            self.logger.info(f"Request payload: {json.dumps(request_data, indent=2)}")
+            self.logger.info(f"Request payload: {json.dumps(request_data)}")
         except (TypeError, ValueError):
             self.logger.info(f"Request payload: {request_data}")
         
